@@ -1,9 +1,0 @@
-
-Payment methods in User und Restaurants im Model ergänzen (auch Resolver?)
-
-
-//Test Script fertig schreiben -> User, Produkte für jede Kategorie und Preise für jedes Produkte, Paymentmethods
-
-//Businessuser Frontend machen
-
-//Resolver schreiben für Bestellung abgeben/ sodass ordered products auch enthalten sind
