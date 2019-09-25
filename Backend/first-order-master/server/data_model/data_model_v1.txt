@@ -1,0 +1,48 @@
+db: firstorder
+collections: users, business users, restaurants, orders, menus (?), tables (? qr codes)
+
+business users:
+
+- name
+- restaurants
+- email
+- password (encrypted / hash)
+- seats / tables
+
+restaurants: (Web-Dev 2 Dataset nehmen?) :)
+
+- owner (business user)
+- restuarant name
+- full address
+- menu: menu entries (foods) incl. price (menu in weitere Collection auslagern?)
+- (rating)
+- paymethods
+- table number
+
+products: (collection in restaurant)
+- id
+- name
+- category
+- type ()
+- price
+- picture hyperlink
+- zusätze, Allergene
+-
+
+
+orders:
+
+- user
+- menu/products
+- date + time
+- orderStatus
+- payStatus
+- seat / table
+
+users:
+
+- firstname
+- lastname
+- email
+- password (encrypted / hash)
+- paymethods

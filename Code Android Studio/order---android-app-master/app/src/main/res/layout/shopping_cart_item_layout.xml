@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/parent_layout_shopping_chart"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp">
+
+
+            <TextView
+                android:id="@+id/shoppingChartText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="Text1"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/raleway"/>
+
+            <TextView
+                android:id="@+id/shoppingChartPrice"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:textColor="@color/white"
+                android:layout_toStartOf="@+id/deleteFromChartButton"
+                android:fontFamily="@font/roboto_regular"
+                android:text="5 $" />
+
+            <ImageButton
+                android:id="@+id/deleteFromChartButton"
+                android:layout_marginEnd="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                />
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

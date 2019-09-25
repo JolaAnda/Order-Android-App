@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+<com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+    android:id="@+id/horizontalMenu"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="90dp"
+    android:background="@color/colorPrimary"
+    app:backgroundMenuColor="@color/colorPrimary"
+    app:item_backgroundColor="@color/colorPrimary"
+    app:icon_height="0dp"
+    app:icon_width="0dp"
+    app:item_marginBottom="0dp"
+    app:item_marginLeft="5dp"
+    app:item_marginRight="5dp"
+    android:gravity="center_vertical"
+    app:item_textColor="@color/colorDarkGreen"
+    android:contextClickable="true"
+    app:item_textSize="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@id/menuRecyclerView"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+
+
+
+</LinearLayout>
+

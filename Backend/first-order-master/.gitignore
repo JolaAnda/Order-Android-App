@@ -1,0 +1,4 @@
+node_modules
+.idea/
+.vscode/
+rethinkdb-2.3.6

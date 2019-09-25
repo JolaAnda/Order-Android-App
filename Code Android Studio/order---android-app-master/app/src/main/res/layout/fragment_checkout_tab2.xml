@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_rectangle"
+        android:id="@+id/paypal_layout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/paypal_logo"
+            android:id="@+id/paypal_logo"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay your order with PayPal:"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="16dp"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="40dp"
+            android:id="@+id/textPayPal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your total amount:"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/textPayPal"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/textColor"
+            android:id="@+id/totalPriceText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/totalPriceText"
+            android:layout_below="@id/textPayPal"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/totalPrice"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/textColor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" $"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/totalPrice"
+            android:layout_below="@id/textPayPal"
+            android:id="@+id/dollar"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/textColor"
+            />
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:src="@drawable/divider_black"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/totalPriceText"
+            android:layout_marginTop="0dp" />
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pay now"
+            android:id="@+id/pay"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/totalPriceText"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway_bold"
+            android:background="@drawable/rounded_rect_pay"
+            android:textColor="@color/textColor"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/paypal_layout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay at our cash desk:"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="16dp"
+            android:textColor="@color/textColor"
+            android:layout_marginStart="40dp"
+            android:id="@+id/textCash" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your total amount:"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_below="@+id/textCash"
+            android:fontFamily="@font/raleway"
+            android:textColor="@color/textColor"
+            android:id="@+id/priceText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/priceText"
+            android:layout_below="@id/textCash"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/price"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/textColor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" $"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/price"
+            android:layout_below="@id/textCash"
+            android:id="@+id/currency"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/textColor"
+            />
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:src="@drawable/divider_black"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/currency"
+            android:layout_marginTop="0dp"
+            android:id="@+id/divider"/>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pay cash"
+            android:id="@+id/payCash"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway_bold"
+            android:background="@drawable/rounded_rect_pay"
+            android:textColor="@color/textColor"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

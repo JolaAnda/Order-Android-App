@@ -1,0 +1,9 @@
+
+    mutation AddOrder($tableNumber: Int!, $restaurant_id: String!, $products: [String!]!) {
+     addOrder(userInput: {tableNumber: $tableNumber, restaurant_id: $restaurant_id, products: $products}) {
+       id
+      }
+  }
+
+
+

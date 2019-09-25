@@ -1,0 +1,19 @@
+query getAllProducts ($restaurant: String!)
+{
+    getRestaurantByID(restaurantID: $restaurant){
+        id
+        name
+        categories{
+            name
+            id
+            products{
+                id
+                name
+                description
+                image_path
+                type
+                price
+            }
+        }
+    }
+}

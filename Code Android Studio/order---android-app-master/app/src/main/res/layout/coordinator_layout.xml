@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".menuActivity.MenuActivity">
+
+    <include layout="@layout/settings_button" />
+
+    <ImageView
+        android:id="@+id/logo_blue"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_transparent" />
+
+
+    <include layout="@layout/horizontal_menu" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/menuRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:background="@color/white"
+            android:scrollbars="vertical" />
+
+
+    <include layout="@layout/bottom_sheet" />
+
+    <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:onClick="startCheckoutPayment"
+        android:src="@drawable/ic_shopping_chart"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@+id/bottom_sheet"
+
+        app:layout_anchorGravity="top|end" />
+
+
+</android.support.design.widget.CoordinatorLayout>
